@@ -32,7 +32,8 @@ MaxHeap heapify(MaxHeap maxheap, int N, int &count) {
 	int largest = N;
 	int left = 2 * N + 1;
 	int right = 2 * N + 2;
-
+	
+	count++;
 	if (left < maxheap.len && maxheap.arr[left] > maxheap.arr[largest]) {
 		largest = left;
 	}
